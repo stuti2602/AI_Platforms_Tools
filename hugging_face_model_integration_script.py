@@ -26,16 +26,16 @@ def hugging_face_model_run():
 
     # Sample text input (batched for performance)
     texts = [
-        #"I love using Hugging Face models!",
-        #"This is the worst day ever."
+        "I love using Hugging Face models!",
+        "This is the worst day ever.",
         "Am i Good Girl?",
         "AI will replace the human."
     ]
 
-    # 6. Run inference (prediction)
+    # Run inference (prediction)
     results = nlp_pipeline(texts)
 
-    # 7. Show results
+    # Show results
     for text, result in zip(texts, results):
         print(f"Text: {text}")
         print(f"Prediction: {result['label']}")
