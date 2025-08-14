@@ -6,19 +6,19 @@
 
 from transformers import pipeline
 
-# 1. Summarization function
+# Summarization function
 def summarize_text(text):
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn",trust_remote_code=True)
     result = summarizer(text, max_length=50, min_length=25, do_sample=False)
     return result[0]['summary_text']
 
-# 2. Text classification function
+# Text classification function
 def classify_text(text):
     classifier = pipeline("text-classification", model="distilbert-base-uncased-finetuned-sst-2-english",trust_remote_code=True)
     result = classifier(text)
     return f"Label: {result[0]['label']}, Confidence: {result[0]['score']:.4f}"
 
-# 3. Creative text generation function
+# Creative text generation function
 def generate_text(prompt):
     generator = pipeline("text-generation", model="gpt2",trust_remote_code=True)
     result = generator(prompt, max_length=50, num_return_sequences=1)
