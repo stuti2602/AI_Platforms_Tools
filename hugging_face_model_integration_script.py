@@ -1,5 +1,5 @@
-# Q-1 1. Hugging Face Model Integration Script 
-# Write a Python script that: 
+# Q-1 Hugging Face Model Integration Script 
+# - Write a Python script that: 
 # - Loads a Hugging Face model and tokenizer 
 # - Performs inference on sample input 
 # - Includes robust error handling and logging 
