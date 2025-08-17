@@ -24,6 +24,7 @@ numpy==2.3.2
 packaging==25.0
 pandas==2.3.1
 pillow==11.3.0
+psutil==7.0.0
 pyparsing==3.2.3
 pyphen==0.17.2
 python-dateutil==2.9.0.post0
