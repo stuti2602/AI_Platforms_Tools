@@ -33,11 +33,11 @@ if __name__ == "__main__":
     print(summarize_text("Artificial Intelligence is transforming industries by automating processes and enhancing decision-making. Companies are investing heavily in AI research."))
 
     # Example for text classification
-    print("\n=== Text Classification ===")
-    print("\nLoading classifier model...")
+    print("=== Text Classification ===")
+    print("Loading classifier model...")
     print(classify_text("I really love this new phone!"))
 
     # Example for creative text generation
-    print("\n=== Creative Text Generation ===")
-    print("\nLoading generator model...")
+    print("=== Creative Text Generation ===")
+    print("Loading generator model...")
     print(generate_text("Once upon a time, there was a magical forest"))

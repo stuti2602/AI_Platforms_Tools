@@ -1,4 +1,4 @@
-# Q-4 Automated Data Exploration with pandas 
+# Q-3 Automated Data Exploration with pandas 
 # Create a reusable function or class that:
 # - Generates statistical summaries for each column 
 # - Detects and reports missing values, duplicates, and outliers 
